@@ -2,10 +2,49 @@
   "name": "utilict",
   "version": "1.0.0",
   "description": "The JavaScript utility library for performing operations on all data types and data structures.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "test": "jest",
+    "prepare": "husky"
   },
-  "author": "Suhas Bhattu",
-  "license": "ISC"
+  "author": "Suhas Bhattu <suhasbhattu@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://utilict-docs.vercel.app/",
+  "devDependencies": {
+    "@babel/core": "7.26.0",
+    "@babel/preset-env": "7.26.0",
+    "@babel/preset-typescript": "7.26.0",
+    "@eslint/js": "9.15.0",
+    "@jest/globals": "29.7.0",
+    "babel-jest": "29.7.0",
+    "eslint": "9.15.0",
+    "husky": "9.1.7",
+    "jest": "29.7.0",
+    "prettier": "3.3.3",
+    "typescript": "5.6.3",
+    "typescript-eslint": "8.15.0"
+  },
+  "dependencies": {
+    "ts-node": "10.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suhasbhattu/utilict.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "number",
+    "string",
+    "array",
+    "matrix",
+    "dataStructures",
+    "stack",
+    "queue"
+  ]
 }
