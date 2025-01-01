@@ -96,3 +96,40 @@ export const sortString = (string: string, descending?: boolean): string => {
   sort(array, descending);
   return array.join("");
 };
+
+/**
+ * Checks if given two strings are anagrams or not.
+ * @param string1
+ * @param string2
+ * @returns 'true' if both strings are anagrams, otherwise, 'false'.
+ */
+export const areStringsAnagram = (
+  string1: string,
+  string2: string,
+): boolean => {
+  if (string1.length !== string2.length) {
+    return false;
+  }
+  interface CharacterMap {
+    [key: string]: number;
+  }
+  const map: CharacterMap = {};
+  for (let char of string1) {
+    if (map[char]) {
+      map[char]++;
+    } else {
+      map[char] = 1;
+    }
+  }
+  for (let char of string2) {
+    if (map[char] !== undefined) {
+      map[char]--;
+      if (map[char] < 0) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+  return true;
+};

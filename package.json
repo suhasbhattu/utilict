@@ -1,6 +1,6 @@
 {
   "name": "utilict",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The JavaScript utility library for performing operations on all data types and data structures.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -44,6 +44,8 @@
     "array",
     "matrix",
     "dataStructures",
+    "data structures",
+    "statistics",
     "stack",
     "queue"
   ]

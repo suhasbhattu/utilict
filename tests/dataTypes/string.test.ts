@@ -1,5 +1,6 @@
 import { describe, expect, test } from "@jest/globals";
 import {
+  areStringsAnagram,
   capitalize,
   getWords,
   isStringPalindrome,
@@ -86,5 +87,13 @@ describe("String tests", () => {
     expect(sortString("mississippi")).toBe("iiiimppssss");
     expect(sortString("structure", true)).toBe("uuttsrrec");
     expect(sortString("vision-2040")).toBe("-0024iinosv");
+  });
+  test("String Anagrams", () => {
+    expect(areStringsAnagram("rat", "car")).toBe(false);
+    expect(areStringsAnagram("state", "taste")).toBe(true);
+    expect(areStringsAnagram("earth", "heart")).toBe(true);
+    expect(areStringsAnagram("feed", "fed")).toBe(false);
+    expect(areStringsAnagram("steel", "steal")).toBe(false);
+    expect(areStringsAnagram("aab", "abb")).toBe(false);
   });
 });
