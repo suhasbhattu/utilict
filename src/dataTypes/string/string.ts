@@ -114,14 +114,14 @@ export const areStringsAnagram = (
     [key: string]: number;
   }
   const map: CharacterMap = {};
-  for (let char of string1) {
+  for (const char of string1) {
     if (map[char]) {
       map[char]++;
     } else {
       map[char] = 1;
     }
   }
-  for (let char of string2) {
+  for (const char of string2) {
     if (map[char] !== undefined) {
       map[char]--;
       if (map[char] < 0) {
