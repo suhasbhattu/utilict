@@ -44,6 +44,7 @@ Currently `number`, `string` and `array` data types are supported. Operations su
 - String Count
 - Capitalize
 - Title Case
+- Anagram Strings
 
 ### Array
 
