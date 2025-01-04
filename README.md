@@ -75,7 +75,7 @@ Currently `number`, `string` and `array` data types are supported. Operations su
 - Matrix Inverse
 - Matrix Flatten
 
-Also, `stack` and `queue` data structures are currently supported with following operations:
+Also, `stack`, `queue` and `linked list` data structures are currently supported with following operations:
 
 ### Stack
 
@@ -97,5 +97,24 @@ Also, `stack` and `queue` data structures are currently supported with following
 - Get Rear
 - Length
 - Search
+
+### Linked List
+
+- Create Linked List Using Array List
+- Reverse List
+- Find List Length
+- Add Node to the First of the List
+- Add Node to the Last of the List
+- Add Node to the given index in the List
+- Remove Node from the First of the List
+- Remove Node from the Last of the List
+- Remove Node from the given index in the List
+- Get node value of the given index in the List
+- Update node value of the given index in the List
+- Get middle node and node value of the List
+- Rotate the List to the Left
+- Rotate the List to the Right
+- Concat the given List with the another List
+- Print the node values of the List
 
 You can check the whole documentation [here](https://utilict-docs.vercel.app/ "utilict library").
