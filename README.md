@@ -117,4 +117,20 @@ Also, `stack`, `queue` and `linked list` data structures are currently supported
 - Concat the given List with the another List
 - Print the node values of the List
 
+### Binary Tree
+
+- Create Binary Tree Using Root Value
+- Get Root Node
+- Set Root Node
+- Insert New Node at the given path
+- Update A Node with the New Value
+- Delete A Node from the Given Path
+- Inorder Traversal
+- Preorder Traversal
+- Postorder Traversal
+- Level Order Traversal
+- Get height of the Binary Tree
+- Get height of the given node
+- Invert the Tree (Mirror Image)
+
 You can check the whole documentation [here](https://utilict-docs.vercel.app/ "utilict library").
