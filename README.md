@@ -133,4 +133,16 @@ Also, `stack`, `queue` and `linked list` data structures are currently supported
 - Get height of the given node
 - Invert the Tree (Mirror Image)
 
+### Binary Search Tree
+
+- Create Binary Search Tree Using Array List
+- Get Root Node
+- Insert New Node in the Binary Search Tree
+- Inorder Traversal
+- Preorder Traversal
+- Postorder Traversal
+- Level Order Traversal
+- Get height of the Binary Search Tree
+- Get height of the given node
+
 You can check the whole documentation [here](https://utilict-docs.vercel.app/ "utilict library").

@@ -80,7 +80,7 @@ const compareObjects = (obj1: any, obj2: any): boolean => {
   return result;
 };
 
-const compare = (item1: any, item2: any) => {
+export const compare = (item1: any, item2: any) => {
   if (typeof item1 === "number" && typeof item2 === "number") {
     return compareNumbers(item1, item2);
   } else if (typeof item1 === "string" && typeof item2 === "string") {
