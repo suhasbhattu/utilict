@@ -35,10 +35,16 @@ describe("Utils Test", () => {
     expect(isEqual([12], [12, 34])).toBe(false);
     expect(
       isEqual(
-        { type: "Electric", name: "Pikachu" },
-        { type: "Electric", name: "Pikachu" },
+        { type: "Electric", name: "Pikachu", isVisible: true, owner: ["Ash"] },
+        {
+          owner: ["Ash"],
+          type: "Electric",
+          name: "Pikachu",
+          isVisible: true,
+        },
       ),
     ).toBe(true);
     expect(isEqual(true, false)).toBe(false);
+    expect(isEqual([1, 2, [3, 4]], [1, 2, [4, 3]])).toBe(false);
   });
 });
