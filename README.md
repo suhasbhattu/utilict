@@ -145,4 +145,14 @@ Also, `stack`, `queue` and `linked list` data structures are currently supported
 - Get height of the Binary Search Tree
 - Get height of the given node
 
+### Complex Number
+- Add
+- Subtract
+- Multiply
+- Divide
+
+### Utility Functions
+- Clone (deep cloning)
+- Compare (compare numbers, string, arrays, objects)
+
 You can check the whole documentation [here](https://utilict-docs.vercel.app/ "utilict library").

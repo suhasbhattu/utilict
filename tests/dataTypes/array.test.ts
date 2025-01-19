@@ -3,6 +3,7 @@ import {
   minArray,
   maxArray,
   arrayProduct,
+  arrayDifference,
   rotateArray,
   gcd,
   histogram,
@@ -39,6 +40,39 @@ describe("Array Tests", () => {
     expect(arrayProduct([-34, -90, 45, 9, -3])).toBe(-3717900);
     expect(arrayProduct([90, 87, 0, -34, -900, -1245])).toBe(0);
     expect(arrayProduct([90, 87, 0, -34, 900, -1245])).toBe(0);
+  });
+  test("Array Difference", () => {
+    expect(arrayDifference([1, 2, 2, 4, 3], [2, 4])).toStrictEqual([1, 2, 3]);
+    expect(
+      arrayDifference(["John", "Paul", "George", "Ringo"], ["John", "George"]),
+    ).toStrictEqual(["Paul", "Ringo"]);
+    expect(
+      arrayDifference(
+        [1, "String", true, { name: "Steven", age: 24 }],
+        [true, 1],
+      ),
+    ).toStrictEqual(["String", { name: "Steven", age: 24 }]);
+    expect(
+      arrayDifference(
+        [
+          { name: "Steven", age: 24 },
+          { name: "Alex", age: 54 },
+        ],
+        [
+          { age: 24, name: "Steven" },
+          { age: 43, name: "Alex" },
+        ],
+      ),
+    ).toStrictEqual([{ name: "Alex", age: 54 }]);
+    expect(
+      arrayDifference([{ name: "Alex", age: 54 }], [{ age: 43 }]),
+    ).toStrictEqual([{ name: "Alex", age: 54 }]);
+    expect(
+      arrayDifference(
+        [{ name: "Alex", address: { city: "Wakanda" } }],
+        [{ name: "Alex", address: { city: "Gotham" } }],
+      ),
+    ).toStrictEqual([{ name: "Alex", address: { city: "Wakanda" } }]);
   });
   test("Rotate Array", () => {
     const list = [1, 2, 3, 4, 5];

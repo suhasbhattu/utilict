@@ -1,4 +1,4 @@
-import { clone, sort } from "../../utils";
+import { clone, isEqual, sort } from "../../utils";
 
 /**
  * Returns the `k`'th minimum element of the given array. `k` is 1-indexed variable with default value as 1.
@@ -35,6 +35,34 @@ export const arrayProduct = (list: number[]): number => {
   if (product !== 0) return product;
   else if (product.toLocaleString()[0] === "-") return 0;
   else return 0;
+};
+
+/**
+ * Subtracts the list2 from the list1 and return result. It will return elements present in list1 but not in list2.
+ * @param list1
+ * @param list2
+ * @returns The subtracted list.
+ */
+export const arrayDifference = (list1: any[], list2: any[]) => {
+  const result: any[] = [];
+  const findIndex = (item: any) => {
+    for (let i = 0; i < list2Clone.length; i++) {
+      if (isEqual(list2Clone[i], item)) {
+        return i;
+      }
+    }
+    return -1;
+  };
+  const list2Clone = clone(list2);
+  for (const item of list1) {
+    const index = findIndex(item);
+    if (index !== -1) {
+      list2Clone.splice(index, 1);
+    } else {
+      result.push(item);
+    }
+  }
+  return result;
 };
 
 /**

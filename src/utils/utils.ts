@@ -16,7 +16,7 @@ const compareBoolean = (flag1: boolean, flag2: boolean): boolean => {
   return flag1 === flag2;
 };
 
-const compareArrays = (arr1: any[], arr2: any[]) => {
+const compareArrays = (arr1: any[], arr2: any[]): boolean => {
   if (arr1.length !== arr2.length) {
     return false;
   } else {
@@ -66,7 +66,7 @@ const compareObjects = (obj1: any, obj2: any): boolean => {
         compareStrings(obj1[key], obj2[key]) !== 0) ||
       (typeof obj1[key] === "boolean" &&
         typeof obj2[key] === "boolean" &&
-        compareBoolean(obj1[key], obj2[key])) ||
+        !compareBoolean(obj1[key], obj2[key])) ||
       (Array.isArray(obj1[key]) &&
         Array.isArray(obj2[key]) &&
         !compareArrays(obj1[key], obj2[key])) ||
@@ -99,15 +99,15 @@ export const isEqual = (item1: any, item2: any) => {
     return false;
   }
   if (typeof item1 === "number" && typeof item2 === "number") {
-    return compareNumbers(item1, item2) === 0;
+    return compare(item1, item2) === 0;
   } else if (typeof item1 === "string" && typeof item2 === "string") {
-    return compareStrings(item1, item2) === 0;
+    return compare(item1, item2) === 0;
   } else if (typeof item1 === "boolean" && typeof item2 === "boolean") {
-    return compareBoolean(item1, item2);
+    return compare(item1, item2);
   } else if (Array.isArray(item1) && Array.isArray(item2)) {
-    return compareArrays(item1, item2);
+    return compare(item1, item2);
   } else if (typeof item1 === "object" && typeof item2 === "object") {
-    return compareObjects(item1, item2);
+    return compare(item1, item2);
   }
 };
 
