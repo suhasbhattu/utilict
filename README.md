@@ -146,12 +146,14 @@ Also, `stack`, `queue` and `linked list` data structures are currently supported
 - Get height of the given node
 
 ### Complex Number
+
 - Add
 - Subtract
 - Multiply
 - Divide
 
 ### Utility Functions
+
 - Clone (deep cloning)
 - Compare (compare numbers, string, arrays, objects)
 
