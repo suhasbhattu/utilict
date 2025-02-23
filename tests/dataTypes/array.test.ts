@@ -8,6 +8,7 @@ import {
   gcd,
   histogram,
   lcm,
+  arrayTrim,
   matrixAddition,
   matrixMultiplication,
   matrixSubtraction,
@@ -161,6 +162,13 @@ describe("Array Tests", () => {
     expect(lcm([12, 18, 24])).toBe(72);
     expect(lcm([10, 12, 15, 75])).toBe(300);
     expect(lcm([])).toBe(0);
+  });
+  test("Array Trim", () => {
+    expect(arrayTrim([0, 3, 2, undefined, null, "Adam"])).toStrictEqual([
+      3,
+      2,
+      "Adam",
+    ]);
   });
   test("Matrix Addition", () => {
     expect(
