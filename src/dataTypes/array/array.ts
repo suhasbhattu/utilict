@@ -299,6 +299,17 @@ export const lcm = (list: number[]): number => {
 };
 
 /**
+ * Removes all empty values (0, undefined, null) from the array and return new array.
+ * @param list
+ * @returns Filtered array with no 0, undefined and null.
+ */
+export const arrayTrim = (list: any[]): any[] => {
+  return list.filter(
+    (item) => item !== 0 && item !== undefined && item !== null,
+  );
+};
+
+/**
  * Adds two matrices and will return the result.
  * @param matrix1 First matrix
  * @param matrix2 Second matrix

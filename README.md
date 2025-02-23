@@ -35,6 +35,7 @@ Currently `number`, `string` and `array` data types are supported. Operations su
 - Permutations
 - Combinations
 - Change Base
+- Distance Between Two Points
 
 ### String
 
@@ -62,6 +63,7 @@ Currently `number`, `string` and `array` data types are supported. Operations su
 - Histogram
 - Greatest Common Divisor (GCD)
 - Least Common Multiple (LCM)
+- Array Trim
 
 ### Matrix
 

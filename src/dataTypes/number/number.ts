@@ -228,3 +228,17 @@ export const changeBase = (
     }
   }
 };
+
+/**
+ * Calculates the distance between given two coordinates.
+ * @param x1 x cordinate of the first point.
+ * @param y1 y cordinate of the first point.
+ * @param x2 x cordinate of the second point.
+ * @param y2 y cordinate of the second point.
+ * @returns The distance between two points.
+ */
+export const distance = (x1: number, y1: number, x2: number, y2: number) => {
+  const xDifference = x2 - x1;
+  const yDifference = y2 - y1;
+  return Math.sqrt(xDifference * xDifference + yDifference * yDifference);
+};
