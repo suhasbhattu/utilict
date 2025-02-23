@@ -7,6 +7,7 @@ import {
   permutations,
   combinations,
   changeBase,
+  distance,
 } from "../../src";
 
 describe("Number Tests", () => {
@@ -80,5 +81,8 @@ describe("Number Tests", () => {
     }).toThrow(
       "The given string is not a valid hexadecimal. It should contain numbers in the range [0-9] and alphabets in the range [a-f] or [A-F].",
     );
+    expect(distance(2, 2, 2, 5)).toBe(3);
+    expect(distance(1, 1, 2, 2)).toBe(1.4142135623730951);
+    expect(distance(-2, 2, 5, -7)).toBe(11.40175425099138);
   });
 });
