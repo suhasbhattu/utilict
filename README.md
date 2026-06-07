@@ -147,6 +147,16 @@ Also, `stack`, `queue` and `linked list` data structures are currently supported
 - Get height of the Binary Search Tree
 - Get height of the given node
 
+### Graph
+
+- Create Graph Using Vertices and Edges
+- Add Vertex
+- Remove Vertex
+- Add Edge
+- Remove Edge
+- Breadth First Search
+- Depth First Search
+
 ### Complex Number
 
 - Add
